@@ -1,0 +1,15 @@
+.welcomeToSedona {
+    width: 1200px;
+    height: 485px;
+    background-color: lightseagreen;
+    background-image: url(../img/index/indexBackgroundHeader.jpg);
+    background-repeat: no-repeat;
+}
+
+.subscription {
+    width: 1200 px;
+    height: 411px;
+    background-color: lightseagreen;
+    background-image: url(../img/index/indexBackgroundFooter.jpg);
+    background-repeat: no-repeat;
+}
