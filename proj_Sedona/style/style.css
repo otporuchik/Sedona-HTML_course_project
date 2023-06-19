@@ -13,3 +13,11 @@
     background-image: url(../img/index/indexBackgroundFooter.jpg);
     background-repeat: no-repeat;
 }
+
+.catalog-header {
+    width: 1200px;
+    height: 408px;
+    background-color: lightgreen;
+    background-image: url(../img/catalog/catalogBackgroundHeader.jpg);
+    background-repeat: no-repeat;
+}
