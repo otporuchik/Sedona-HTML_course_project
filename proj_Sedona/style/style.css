@@ -14,7 +14,14 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: "PT Sans", sans-serif;
     font-weight: normal;
     font-size: 18px;
@@ -23,8 +30,11 @@ body {
 }
 
 .welcomeToSedona {
+    margin: 0;
+    padding: 0;
+    padding-top: 51px;
     width: 1200px;
-    height: 485px;
+    height: 434px;
     background-color: lightseagreen;
     background-image: url(../img/index/indexBackgroundHeader.jpg);
     background-repeat: no-repeat;
@@ -32,10 +42,13 @@ body {
 
 .subscription {
     width: 1200 px;
-    height: 411px;
+    height: 221px;
+    margin: 0 auto;
+    padding: 95px 0px;
     background-color: lightseagreen;
     background-image: url(../img/index/indexBackgroundFooter.jpg);
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 .catalog-header {
@@ -50,6 +63,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    text-decoration: none;
 }
 
 .navigation-list li {
@@ -60,13 +74,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #756257;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navigation-user-link {
     width: 160px;
     height: 37px;
     font-weight: bold;
     line-height: 20px;
-    background-color: #756257;
-    color: #FFF;
-    text-decoration: none;
 }
 
 .advantages-header, 
@@ -232,3 +249,155 @@ body {
     line-height: 26px;
 }
 
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.navigation {
+    width: 1060px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 345px;
+    margin: 0;
+    margin-left: 30px;
+    padding: 20px 17px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-user {
+    width: 264px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.welcomeToSedona img {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages-header, 
+.advantages-intro {
+    text-align: center;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+    display: flex;
+    height: 384px; 
+}
+
+.photo-advantage-description, 
+.advantage-description {
+    width: 400px;
+    text-align: center;
+    padding: 97px 85px 87px;
+}
+
+.advantages-definitions-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.advantages-definitions-item {
+    display: block;
+    width: 250px;
+    padding: 184px 75px 79px;
+    text-align: center;
+    background-color: rgba(101,135,166, 0.12);
+}
+
+.advantages-definitions-item:nth-child(even) {
+    background-color: #FFF;
+}
+
+.advantages-definitions-item dt, 
+.advantages-definitions-item dd {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    display: block;
+    width: 250px;
+}
+
+.advantage-description {
+    background-color: rgba(101,135,166, 0.12);
+}
+
+.advantage-description:nth-child(even) {
+    background-color: rgba(101,135,166, 0.2);
+}
+
+.appointment {
+    width: 720px;
+    height: 237px;
+    margin: 0 auto;
+    padding: 90px 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.appointment-title, 
+.appointment-text, 
+.subscription-title, 
+.subscription-text {
+    margin: 0;
+    padding: 0;
+}
+
+.appointment-title {
+    margin-bottom: 30px;
+}
+
+.appointment-text {
+    margin-bottom: 55px;
+}
+
+.subscription-title {
+    margin-bottom: 30px;
+}
+
+.subscription-text {
+    margin-bottom: 45px;
+}
+
+.page-footer {
+    width: 1056px;
+    margin: 0 auto;
+    padding: 40px 72px;
+    display: flex;
+}
+
+.footer-social-list {
+    width: 107px;
+    margin: 0;
+    margin-left: 45px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-social-item {
+    margin-left: 30px;
+}
+
+.footer-contacts-address {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 750px;
+    text-align: center;
+}

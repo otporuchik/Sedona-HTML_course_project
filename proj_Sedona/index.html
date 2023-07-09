@@ -9,8 +9,8 @@
 </head>
 <body>
   <header class="page-header">
-    <img src="img/header/logo.svg" width="139" height="70" alt="Логотип">
     <nav class="navigation">
+      <img src="img/header/logo.svg" width="139" height="70" alt="Логотип">
       <ul class="navigation-list">
         <li class="navigation-item"><a class="main-nav-link navigation-link-current" href="index.html">Главная</a></li>
         <li class="navigation-item"><a class="main-nav-link" href="#">О Седоне</a></li>
@@ -19,15 +19,15 @@
       <ul class="navigation-list navigation-user">
         <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
         <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
-        <li><a href="#">Хочу сюда</a></li>
+        <li><a class="navigation-user-link" href="#">Хочу сюда</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-container main-index">
     <h1 class="visually-hidden">Городок Седона</h1>
     <section class="advantages">
       <div class="welcomeToSedona">
-        <img src="img/index/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+        <img src="img/index/welcome.svg" width="457" height="352" alt="Добро пожаловать в Седону">
       </div>
       <h2 class="advantages-header">Седона - небольшой городок в Аризоне, 
         <br>заслуживающий большего!
@@ -38,18 +38,32 @@
           <section class="photo-advantage-description">
             <h3>Настоящий городок</h2>
             <p class="advantage-number">№1</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="advantage-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </section>
           <img src="img/index/SedonaCity.jpg" width="800" height="384" alt="Простые виды города">
         </li>
         <li class="advantages-item">
           <dl class="advantages-definitions-list">
-            <dt>Жильё</dt>
-            <dd>Рекомендуем поить в настоящем мотеле, всё как в кино!</dd>
-            <dt>Еда</dt>
-            <dd>Всегда заказывайте топовы фирменный бургер, вы не разочаруетесь</dd>
-            <dt>Сувениры</dt>
-            <dd>Не только китайского, но и настоящего местного производства!</dd>
+            <span class="advantages-definitions-item">
+              <dt>Жильё</dt>
+              <dd>Рекомендуем пожить 
+                <br>в настоящем мотеле, 
+                <br>всё как в кино!
+              </dd>
+            </span>
+            <span class="advantages-definitions-item">
+              <dt>Еда</dt>
+              <dd>Всегда заказывайте 
+                <br>топовый фирменный бургер, 
+                <br>вы не разочаруетесь
+              </dd>
+            </span>
+            <span class="advantages-definitions-item">
+              <dt>Сувениры</dt>
+              <dd>Не только китайского, 
+                <br>но и настоящего местного производства!
+              </dd>
+            </span>
           </dl>
         </li>
         <li class="advantages-item">
@@ -57,7 +71,7 @@
           <section class="photo-advantage-description">
             <h3>Там есть мост дьявола</h2>
             <p class="advantage-number">№2</p>
-            <p>Да, по нему можно пройти!
+            <p class="advantage-text">Да, по нему можно пройти!
               <br>Если вы осмелитесь,
               <br>разумеется!
             </p>
