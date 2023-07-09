@@ -9,21 +9,21 @@
 </head>
 <body>
   <header class="page-header">
-    <img src="img/header/logo.svg" width="139" height="70" alt="Логотип">
     <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a href="index.html">Главная</a></li>
-        <li class="navigation-item"><a href="#">О Седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link-current" href="catalog.html">Гостиницы</a></li>
-      </ul>
-      <ul class="navigation-list navigation-user">
-        <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
-        <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
-        <li><a href="#">Хочу сюда</a></li>
-      </ul>
-    </nav>
+        <img src="img/header/logo.svg" width="139" height="70" alt="Логотип">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="main-nav-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="main-nav-link" href="#">О Седоне</a></li>
+          <li class="navigation-item"><a class="main-nav-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li><a href="#"><span class="visually-hidden">Поиск</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Избранное</span></a></li>
+          <li><a class="navigation-user-link" href="#">Хочу сюда</a></li>
+        </ul>
+      </nav>
   </header>
-  <main class="main-catalog">
+  <main class="main-catalog catalog-container">
     <header class="catalog-header">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -41,7 +41,7 @@
         <section class="catalog-filters">
             <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="catalog-filter-group">
+                <fieldset class="filter-group filter-infrastructure">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -58,7 +58,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-list">
+                <fieldset class="filter-group filter-house">
                     <legend class="catalog-filter-title">Тип жилья</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -75,7 +75,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-list">
+                <fieldset class="filter-group filter-price">
                     <legend class="catalog-filter-title">Стоимость, &#x20bd;</legend>
                     <p>
                         <label class="catalog-filter-label">
@@ -92,15 +92,17 @@
                         <span class="visually-hidden">Ручка изменения максимальной цены</span>
                     </button>
                 </fieldset>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                <div class="filter-buttons">
+                    <button class="button" type="submit">Применить</button>
+                    <button class="button" type="reset">Сбросить</button>
+                </div>
             </form>
         </section>
     </header>
     <section class="catalog-search">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p class="hotels-found-label">Найдено гостиниц: <span class="hotels-found-number">38</span></p>
         <section class="catalog-search-sorting">
+            <p class="hotels-found-label">Найдено гостиниц: <span class="hotels-found-number">38</span></p>
             <form class="sorting-type">
                 <h3 class="visually-hidden">Сортировка и отображение</h3>
                 <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -241,6 +243,16 @@
             <option value="twelve">12</option>
         </select>
     </div>
+    <section class="subscription-catalog">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Только полезная информация и никакого спама,
+          <br>честное бойскаутское!
+        </p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" placeholder="Ваш e-mail">
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
   </main>
   <footer class="page-footer">
     <ul class="footer-social-list">

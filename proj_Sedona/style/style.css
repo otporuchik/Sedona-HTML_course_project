@@ -40,20 +40,31 @@ body {
     background-repeat: no-repeat;
 }
 
-.subscription {
-    width: 1200 px;
+.subscription-main {
+    width: 1200px;
     height: 221px;
     margin: 0 auto;
     padding: 95px 0px;
+    color: #FFF;
     background-color: lightseagreen;
     background-image: url(../img/index/indexBackgroundFooter.jpg);
     background-repeat: no-repeat;
     text-align: center;
 }
 
+.subscription-catalog {
+    width: 1055px;
+    height: 221px;
+    margin: 0 auto;
+    padding: 95px 0px;
+    text-align: center;
+}
+
 .catalog-header {
-    width: 1200px;
-    height: 408px;
+    margin: 0;
+    padding: 35px 72px 86px 72px;
+    width: 1042px;
+    height: 287px;
     background-color: lightgreen;
     background-image: url(../img/catalog/catalogBackgroundHeader.jpg);
     background-repeat: no-repeat;
@@ -134,10 +145,6 @@ body {
     color: #FFF;
     background-color: #756257;
     text-decoration: none;
-}
-
-.subscription {
-    color: #FFF;
 }
 
 .subscription-title {
@@ -400,4 +407,106 @@ body {
     padding: 0;
     width: 750px;
     text-align: center;
+}
+
+.catalog-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.catalog-title {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.catalog-filter {
+    display: flex;
+}
+
+.filter-infrastructure {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-house {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    margin-left: 65px;
+}
+
+.filter-price {
+    width: 287px;
+    margin: 0;
+    padding: 0;
+    margin-left: 150px;
+}
+
+.filter-buttons {
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog-search-sorting {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sorting-type {
+    display: flex;
+}
+
+.sorting-type ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog-view-list {
+    display: flex;
+}
+
+.catalog-view-item a {
+    text-decoration: none;
+}
+
+.catalog-search-result {
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.catalog-load-button {
+    display: block;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.catalog-pagination {
+    width: 1056px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.catalog-pagination-list {
+    display: flex;
 }
