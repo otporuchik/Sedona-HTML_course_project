@@ -29,6 +29,17 @@ body {
     color: #333;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .welcomeToSedona {
     margin: 0;
     padding: 0;
@@ -190,8 +201,16 @@ body {
     line-height: 39px;
 }
 
+.hotel-card {
+    display: grid;
+    grid-template-columns: 133px 140px;
+    grid-template-rows: 206px repeat(4, auto);
+    column-gap: 26px;
+}
+
 .hotel-card-link {
     text-decoration: none;
+    grid-column: 1 / -1;
 }
 
 .hotel-card-title {
@@ -199,6 +218,10 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
+    margin: 0;
+    padding: 0;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
 }
 
 .hotel-card-about {
@@ -208,6 +231,16 @@ body {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
+}
+
+.hotel-type {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.hotel-price {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
 }
 
 .hotel-card-favourite {
@@ -269,17 +302,19 @@ body {
 }
 
 .navigation-list {
-    width: 345px;
+    min-width: 345px;
     margin: 0;
     margin-left: 30px;
     padding: 20px 17px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .navigation-user {
     width: 264px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-left: auto;
 }
@@ -493,6 +528,10 @@ body {
 .catalog-search-result {
     width: 1056px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    column-gap: 18px;
+    row-gap: 10px;
 }
 
 .catalog-load-button {
