@@ -178,5 +178,75 @@
     </address>
     <img src="img/footer/htmlAcademyLogo.svg" width="115" height="33" alt="htmlacademy">
   </footer>
+  <section class="modal-wrapper">
+    <div class="modal-appointment">
+      <div class="modal-title">
+        <h2>Поиск гостиницы в седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
+        </button>
+      </div>
+      <form class="appointment-form">
+        <div class="appointment-picker-wrapper">
+          <label class="in-date-label" for="in-date">Дата заезда: </label>
+          <input class="modal-input in-date" type="date" name="in-date" value="2020-04-27">
+          <span class="in-date-message wrong-in-date">Мы не можем отправить вас в прошлое</span>
+          <label class="out-date-label" for="out-date">Дата выезда: </label>
+          <input class="modal-input out-date" type="date" name="out-date" value="2021-09-01">
+          <span class="out-date-message ok-message">На эти даты есть свободные номера. Пока есть.</span>
+          <label class="adult-label" for="adult-amount">Взрослые: </label>
+          <div class="adult-input-wrapper">
+            <button class="modal-input-button minus-modal-button" type="button">
+              <span class="visually-hidden">-</span>
+              <svg class="modal-icon modal-minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+            </button>
+            <input class="modal-input adult-input" type="number" name="adult-amount" value="2">
+            <button class="modal-input-button plus-modal-button" type="button">
+              <span class="visually-hidden">+</span>
+              <svg class="modal-icon modal-plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_18711_1465)">
+                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_18711_1465">
+                <rect width="13" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <label class="children-label" for="children-amount">Дети: <button class="children-info-button" type="button">i</button></label>
+          <div class="children-input-wrapper">
+            <button class="modal-input-button minus-modal-button" type="button">
+              <span class="visually-hidden">-</span>
+              <svg class="modal-icon modal-minus-icon" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 1L13 1V0L0 0Z"/>
+              </svg>
+            </button>
+            <input class="modal-input children-input" type="number" name="children-amount" value="1">
+            <button class="modal-input-button plus-modal-button" type="button">
+              <span class="visually-hidden">+</span>
+              <svg class="modal-icon modal-plus-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_18711_1465)">
+                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_18711_1465">
+                <rect width="13" height="13" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="modal-submit-button" type="button">Найти</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
