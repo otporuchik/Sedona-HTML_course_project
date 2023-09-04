@@ -238,11 +238,11 @@
                   </clipPath>
                   </defs>
                 </svg>
-                <span>Укажите количество детей, 
+                <p>Укажите количество детей, 
                   которые будут с вами, возраст 
                   которых от 6 до 18 лет. Дети 
                   до 6 лет размещаются бесплатно.
-                </span>
+                </p>
               </span>
             </button>
             <input class="modal-input children-input" type="number" name="children-amount" value="1">

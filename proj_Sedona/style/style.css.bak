@@ -385,10 +385,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.select-control a {
-	text-decoration: none;
-}
-
 .catalog-view-list {
     margin: 0;
     padding: 0;

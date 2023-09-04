@@ -149,7 +149,7 @@
             <p class="hotels-found-label">Найдено гостиниц: <span class="hotels-found-number">38</span></p>
             <form class="sorting-type">
                 <h3 class="visually-hidden">Сортировка и отображение</h3>
-                <span class="visually-hidden">Сортировка</span>
+                <label class="visually-hidden" for="sorting">Сортировка</label>
                 <!--
                 <select class="select-control" id="sorting" name="sorting">
                     <option value="cheap">Сначала дешёвые</option>
