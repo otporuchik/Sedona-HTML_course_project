@@ -42,8 +42,9 @@ body {
 
 .welcomeToSedona {
     margin: 0;
+    margin-bottom: 65px;
     padding: 0;
-    padding-top: 51px;
+    padding-top: 50px;
     width: 1200px;
     height: 434px;
     background-color: lightseagreen;
@@ -66,6 +67,7 @@ body {
 .subscription-form {
     display: flex;
     justify-content: center;
+    margin-bottom: 140px;
 }
 
 .subscription-email-form {
@@ -100,20 +102,24 @@ body {
 
 .subscription-catalog {
     width: 1055px;
-    height: 221px;
     margin: 0 auto;
-    padding: 95px 0px;
+    padding-top: 72px;
     text-align: center;
 }
 
 .catalog-header {
+    box-sizing: border-box;
     margin: 0;
     padding: 35px 72px 86px 72px;
-    width: 1042px;
-    height: 287px;
+    width: 1200px;
+    min-height: 287px;
     background-color: lightgreen;
     background-image: url(../img/catalog/catalogBackgroundHeader.jpg);
     background-repeat: no-repeat;
+}
+
+.logo-img {
+    z-index: 1;
 }
 
 .main-nav-link {
@@ -131,7 +137,7 @@ body {
 .main-nav-link:focus {
     border: none;
     outline: none;
-    text-transform: uppercase;
+    text-transform: uppercase;          /*двигает соседей. не победил*/
 }
 
 .main-nav-link:active {
@@ -146,11 +152,11 @@ body {
 .navigation-link-current::after {
     content: "";
 	display: block;
-	margin-top: 20px;
 	position: absolute;
 	height: 3px;
 	left: 0;
     right: 0;
+    top: 43px;
 	background-color: #756257;
 }
 
@@ -158,48 +164,48 @@ body {
     width: 1060px;
     display: flex;
     margin: 0 auto;
+    margin-bottom: -5px;
 }
 
 .navigation-list {
+    list-style-type: none;
     min-width: 345px;
     margin: 0;
-    margin-left: 30px;
-    padding: 20px 17px;
+    margin-left: 14px;
+    padding: 20px 17px 0 17px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .navigation-user {
+    list-style-type: none;
     box-sizing: border-box;
-    width: 264px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: end;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
     margin-left: auto;
 }
 
-.navigation-user li {
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-list li {
-    list-style-type: none;
-}
-
 .navigation-user a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
     box-sizing: border-box;
     display: flex;
-    align-items: end;
-    padding-bottom: 10px;
+    align-items: center;
     justify-content: center;
     color: #FFF;
     text-decoration: none;
     min-width: 42px;
     height: 37px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .navigation-svg {
@@ -219,15 +225,6 @@ body {
 .navigation-svg:active {
     opacity: 30%;
 }
-
-/*как отцентрировать иконку svg
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-*/
 
 .navigation-user-link {
     box-sizing: border-box;
@@ -260,7 +257,13 @@ body {
     color: #000;
 }
 
+.advantages-header {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 .advantages-intro {
+    margin-bottom: 80px;
     font-weight: normal;
     font-size: 22px;
     line-height: 36px;
@@ -271,14 +274,27 @@ body {
     color: #FFF;
 }
 
-.photo-advantage-description h3 {
+.photo-advantage-description h2 {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 29px;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
 }
 
+.advantage-number {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.advantage-text {
+    margin: 0;
+}
+
 .advantages-definitions-list dt, 
-.advantage-description h3 {
+.advantages-definitions-item h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -304,6 +320,7 @@ body {
     background-color: #756257;
     border-radius: 10px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .appointment-link:hover {
@@ -318,10 +335,11 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.subscription-title {
+.subscription-catalog .subscription-title {
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 48px;
 }
 
 .subscription-text {
@@ -352,6 +370,7 @@ body {
     font-weight: bold;
     font-size: 30px;
     line-height: 39px;
+    text-transform: uppercase;
 }
 
 .select-control {
@@ -414,7 +433,8 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
-    margin: 16px 0;
+    margin-top: 17px;
+    margin-bottom: 18px;
     padding: 0;
     grid-row: 2 / 3;
     grid-column: 1 / -1;
@@ -536,6 +556,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .rating-star {
@@ -557,6 +578,7 @@ body {
     margin: 0 auto;
     margin-bottom: 60px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .catalog-load-button::before {
@@ -675,11 +697,24 @@ body {
 	vertical-align: bottom;
 }
 
-.photo-advantage-description, 
-.advantage-description {
+.photo-advantage-description {
     width: 400px;
     text-align: center;
     padding: 93px 85px 83px;
+}
+
+.advantage-description {
+    width: 400px;
+    text-align: center;
+    padding: 95px 85px 83px;
+}
+
+.advantage-description h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .advantages-definitions-list {
@@ -693,9 +728,13 @@ body {
 .advantages-definitions-item {
     display: block;
     width: 250px;
-    padding: 80px 75px 79px;
+    padding: 90px 75px 79px;
     text-align: center;
     background-color: rgba(101,135,166, 0.12);
+}
+
+.advantages-definitions-item:nth-child(3) {
+    padding-top: 85px;
 }
 
 .advantages-img {
@@ -709,10 +748,17 @@ body {
 .advantages-definitions-item h3, 
 .advantages-definitions-item p {
     margin: 0;
-    margin-bottom: 20px;
     padding: 0;
     display: block;
     width: 250px;
+}
+
+.advantages-definitions-item h3 {
+    margin-bottom: 21px;
+}
+
+.advantages-definitions-item p {
+    margin: 0;
 }
 
 .advantages-definitions-item h3 {
@@ -737,7 +783,10 @@ body {
     width: 720px;
     height: 237px;
     margin: 0 auto;
-    padding: 90px 240px;
+    padding-top: 90px;
+    padding-right: 240px;
+    padding-bottom: 87px;
+    padding-left: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -753,6 +802,7 @@ body {
 }
 
 .appointment-title {
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
@@ -770,15 +820,15 @@ body {
 }
 
 .page-footer {
-    width: 1056px;
+    box-sizing: border-box;
+    width: 1200px;
     margin: 0 auto;
-    padding: 40px 72px;
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-right: 72px;
     display: flex;
-}
-
-.footer-social-list:first-child, 
-.footer-social-item:first-child {
-    margin-left: 0;
+    border-top: 1px solid transparent;
 }
 
 .footer-social-list {
@@ -791,7 +841,13 @@ body {
 }
 
 .footer-social-item {
-    margin-left: 30px;
+    display: block;
+    margin-left: 8px;
+}
+
+.footer-social-list:first-child, 
+.footer-social-item:first-child {
+    margin-left: 0;
 }
 
 .social-logo {
@@ -824,7 +880,8 @@ body {
 
 .footer-contacts-address {
     display: block;
-    margin: 0 auto;
+    margin-left: 55px;
+    margin-top: 10px;
     padding: 0;
     width: 750px;
     text-align: center;
@@ -841,6 +898,10 @@ body {
     font-style: oblique;
 }
 
+.page-footer img {
+    margin-left: auto;
+}
+
 .catalog-container {
     width: 1200px;
     margin: 0 auto;
@@ -853,15 +914,16 @@ body {
 }
 
 .breadcrumbs {
-    margin: 0;
+    margin-top: -12px;
+    margin-left: -10px;
     padding: 0;
     list-style-type: none;
     display: flex;
 }
 
 .breadcrumbs-item {
-    margin-right: 10px;
-    margin-bottom: 45px;
+    margin-right: 5px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -914,14 +976,25 @@ body {
     margin-bottom: 30px;
 }
 
+.filter-house .catalog-filter-title {
+    margin-left: -2px;
+}
+
+.filter-price .catalog-filter-title {
+    margin-top: 1px;
+    margin-left: 4px;
+}
+
 .catalog-filter-list {
     margin: 0;
+    margin-left: 2px;
+    margin-top: 2px;
     padding: 0;
     list-style-type: none;
 }
 
 .catalog-filter-item {
-    margin-bottom: 16px;
+    margin-bottom: 13px;
 }
 
 .control {
@@ -986,6 +1059,7 @@ body {
 .filter-infrastructure {
     width: 150px;
     margin: 0;
+    margin-left: -2px;
     padding: 0;
 }
 
@@ -1038,7 +1112,7 @@ body {
 }
 
 .toggle-min {
-    left: -10px;
+    left: 3px;
     top: -10px;
 }
 
@@ -1050,6 +1124,8 @@ body {
 .range-wrapper-inputs {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
+    margin-left: 6px;
 }
 
 .catalog-filter-label {
@@ -1085,8 +1161,8 @@ body {
 
 .filter-buttons {
     width: 160px;
-    margin: 0;
     padding: 0;
+    margin-top: 62px;
     margin-left: 80px;
     display: flex;
     flex-direction: column;
@@ -1097,6 +1173,7 @@ body {
     width: 160px;
     height: 48px;
     border: none;
+    border-radius: 4px;
     display: inline-block;
     background-color: #83B3D3;
     color: #FFF;
@@ -1128,6 +1205,10 @@ body {
     width: 160px;
     height: 32px;
     font-size: 18px;
+    line-height: 23px;
+    margin-top: -5px;
+    margin-left: 1px;
+    font-family: inherit;
 }
 
 .filter-buttons > .button[type="reset"]:hover {
@@ -1144,7 +1225,7 @@ body {
 }
 
 .catalog-search-sorting {
-    margin: 0;
+    margin-top: 2px;
     padding: 0;
     display: flex;
 }
@@ -1189,11 +1270,12 @@ body {
 
 .catalog-search-result {
     width: 1056px;
-    margin: 0 auto;
+    margin-top: 47px;
+    margin-left: 91px;
     display: grid;
     grid-template-columns: repeat(3, 340px);
     column-gap: 18px;
-    row-gap: 30px;
+    row-gap: 49px;
 }
 
 /*Модальное окно*/
